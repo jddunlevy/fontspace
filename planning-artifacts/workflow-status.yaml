@@ -1,0 +1,30 @@
+project: fontspace
+level: 3
+last_updated: 2026-10-29
+current_phase: 0-planning
+target_date: 2026-12-18
+
+# Lean artifact set for Phase 0 (6 docs, not 7 - paper process folded into architecture)
+artifacts:
+  research-report: complete       # research/research-report.md - Q1-8 answered, sourced
+  product-brief: complete         # product-brief.md
+  prd: complete                   # prd.md - both fonts + tracker + proofs + test tiers
+  architecture: complete          # architecture.md - incl. paper process + template spec (S8)
+  decision-log: complete          # decision-log.md - D-01..D-21 + open items
+  epics-roadmap: complete         # epics-roadmap.md - 8 epics, critical path, owner time
+
+skipped:
+  ux-design: template sheet spec covers it; folded into architecture
+  paper-process-spec: folded into architecture
+
+phase_0: complete
+next_phase: 1-tooling-setup
+first_story: "1.1 - Spike S1: Fontra Pak -> UFO -> fontmake -> hb-shape round trip"
+
+blocked_on_user:
+  - O-01 handwriting samples (blocks template sheet + all drawing)
+  - O-02 toolchain sign-off ($0 stack; $49 FontCreator fallback)
+  - O-03 aesthetic direction (deferred until samples arrive)
+  - O-04 font family names (needed by Epic 8 metadata)
+
+decisions_awaiting_approval: [D-03]

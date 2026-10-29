@@ -1,0 +1,23 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Third-party binaries - reinstall via docs/setup.md, never commit
+vendor/
+
+# Generated output - rebuildable from sources/
+build/
+proofs/
+
+# Generated feature code - regenerate from sources/data/*.csv
+sources/features/cursive-calt.fea
+sources/features/cursive-liga.fea
+
+# OS noise
+Thumbs.db
+desktop.ini
+*~
+
+# Scans: tracked deliberately. They are the primary process evidence and cannot be
+# regenerated. If repo size becomes a problem, move to Git LFS rather than ignoring.

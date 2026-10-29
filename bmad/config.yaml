@@ -1,0 +1,48 @@
+# BMAD project configuration
+project_name: fontspace
+project_slug: fontspace
+project_type: other # handmade font family + supporting tooling
+project_level: 3 # complex: 12-40 stories
+
+user_name: Jaxon
+user_skill_level: beginner # new to type design; generally technical
+communication_language: English
+document_output_language: English
+
+planning_artifacts: ./planning-artifacts
+implementation_artifacts: ./implementation-artifacts
+project_knowledge: ./docs
+
+# --- Project framing ---
+framing: personal creative project, driven by personal standards
+priority: finished working fonts > process documentation
+target_date: 2026-12-18
+tool_budget_ceiling_usd: 100
+
+current_phase: 0 # research / planning / organization ONLY
+
+phase_0_constraints:
+  - No production code, build scripts, or font binaries
+  - No glyph drawing or font tooling installs beyond verifying a claim
+  - No implementation stories executed
+  - Unresolvable-without-prototype items become Phase 1 spikes
+
+communication_rules:
+  - Direct and concise; no fluff; constructive criticism welcome
+  - Explain type-design decisions in plain terms
+  - Make the call, state the reasoning, list rejected alternatives
+  - Flag scope risks plainly
+  - Only ask the user about taste, handwriting, scope, deadline, budget
+  - Do not overengineer; lean artifacts over exhaustive ones
+
+platform: windows
+
+deliverables:
+  fonts:
+    - id: font-cursive
+      name: Connecting cursive (lowercase, from user handwriting)
+      formats: [otf, ttf, woff2]
+      note: every bigram must connect by default via rules/classes, not per-pair drawing
+    - id: font-simple
+      name: Simple handdrawn (uppercase + lowercase, non-connecting)
+      formats: [otf, ttf, woff2]
